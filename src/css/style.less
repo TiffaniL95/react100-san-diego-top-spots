@@ -1,0 +1,340 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* basic style */
+
+html {
+   box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+ 
+ body {
+   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.5;
+   margin: 0;
+   padding: 0;
+   background: rgb(52,155,148);
+   background: linear-gradient(rgba(52,155,148,1) 0%, rgba(19,16,68,1) 100%);
+ }
+
+ /* GRID */
+ 
+ /* CONTAINER */
+ .container {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+ 
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ 
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+ }
+ 
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+/* WELL */
+
+ .well {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-clip: border-box;
+   border: 2px solid rgba(0, 0, 0, 0.125);
+   border-radius: 0.25rem;
+ }
+
+ /* typography */
+
+ .text-center {
+   text-align: center;
+ }
+ 
+h1 {
+   font-family: "Ms Madi", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 6rem;
+   color: #fff;
+}
+
+p{ 
+   font-size: .85rem;
+   font-weight: 600;
+   color: white;
+   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+   margin: 0 0 2px 0;
+}
+
+h4 {
+   font-size: 1.7rem;
+   font-weight: 600;
+   margin: 4px;
+   color: white;
+   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.tagline{
+   font-style: italic;
+   font-size: 0.9rem;
+   color: #fff;
+   text-shadow: none;
+}
+
+/* Margin && Padding */
+
+ .m-4 {
+   margin: 1.5rem;
+ }
+
+ .p-4 {
+   padding: .75rem;
+ }
+
+
+
+ /* borders */
+
+ .border {
+   border: 2px solid #dee2e6;
+   border-color: #212529
+ }
+
+ /* button */
+
+ button {
+   display: inline-block;
+   margin: 5px auto;
+   padding: 5px;
+   width: 100px;
+   height: 50px;
+   background: url("http://authors.appadvice.com/wp-content/appadvice-v2-media/2016/08/image_cc1a54d55647e6fedc12f8ebc2b22176.png") center;
+   border-radius: 0.25rem;
+ }
+
+ a{
+    font-size: .8rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+ }
+
+ /* dynamic className */
+
+ .Safari:hover {
+   background: url("https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_726,q_50,w_1900/https://assets.simpleviewinc.com/simpleview/image/upload/crm/temecula/18517965_1840025489347452_3864850456116514170_o0_b6b30cf5-5056-a36a-07e6915a01dd1b64.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Seaport:hover {
+   background: url("https://a.cdn-hotels.com/gdcs/production173/d1149/8f4fa7a3-bdc6-4842-a064-a118ff912aee.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Comic:hover {
+   background: url("https://media.vanityfair.com/photos/5974075b1bd71e4b33f1030c/master/pass/marvel-comic-con.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Stone:hover {
+   background: url("https://mma.prnewswire.com/media/687543/Stone_Brewing_Logo.jpg?p=facebook") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Grub:hover {
+   background: url("https://media-cdn.tripadvisor.com/media/photo-s/10/46/01/fe/cafe-21.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Surfari:hover {
+   background: url("https://www.boardsportsource.com/wp-content/uploads/2020/11/16x9-surfari-800x450.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Torrey:hover {
+   background: url("https://www.reesjonesinc.com/torry-pines-south/images/Torrey-Pines-Feat.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Gaslamp:hover {
+   background: url("https://assets.site-static.com/userFiles/2597/image/Blog_Posts_Main_Images_Replacement/5_Reasons_Gaslamp_Quarter_Downtown_San_Diego_is_a_Great_Place_to_Live_in_2021.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Birch:hover {
+   background: url("https://lajollamom.com/wp-content/uploads/2018/03/birch-aquarium-la-jolla-scaled.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Mummies:hover {
+   background: url("https://museumofus.org/wp-content/uploads/CANNIBALS-MUSEUM-OF-US-HOMEPAGE.png") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Adams:hover {
+   background: url("https://www.womansworld.com/wp-content/uploads/2018/12/cat-books-1.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Crazee:hover {
+   background: url("https://static.spotapps.co/spots/78/a405f8a0624e79815fda233d96d666/full") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Convoy:hover {
+   background: url("https://blog.sandiego.org/wp-content/uploads/2019/11/convoy-street_1600x800.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Agua:hover {
+   background: url("https://webcms.pima.gov/UserFiles/Servers/Server_6/Image/Government/Natural%20Resources%20Parks%20and%20Recreation/Parks/Agua%20Caliente%20Park/20200729-Pond-One-001.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Thrift:hover {
+   background: url("https://s3-media0.fl.yelpcdn.com/bphoto/Mf62mZtTir9jUsTnmNeCrA/l.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Fashion:hover {
+   background: url("https://assets.simon.com/content/SEARCH/765.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Farmers:hover {
+   background: url("https://media.nbcbayarea.com/2019/09/OB-Farmers-Market-Troy-Orem.jpg?quality=85&strip=all&fit=1200%2C675") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Scuba:hover {
+   background: url("https://dan.org/wp-content/uploads/2020/09/divers-case-summaries-3Q3A7794-DAN-1200x650-1.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Casbah:hover {
+   background: url("https://files.gigtown.com/8699bb4de2b7b9cd56f27ab523314ab1_2c05599db99e88c396308969a3bc3e26_casbah-san-diego-urban-lifestyle-engagement.jpg") no-repeat;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Legoland:hover {
+   background: url("https://newyorkyimby.com/wp-content/uploads/2021/07/LEGOLAND-New-York-is-now-open-in-Orange-County-Courtesy-of-LEGOLAND.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Library:hover {
+   background: url("https://www.sandiego.gov/sites/default/files/new_central-childrens-steve_simpson.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Globe:hover {
+   background: url("https://www.theoldglobe.org/link/89fe9a6d5ed3475a8d018c9927c75ce8.aspx?id=12150") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Spreckels:hover {
+   background: url("https://i0.wp.com/spreckelsorgan.org/wp-content/uploads/2015/08/pavilion2015-08-10.jpg?ssl=1") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Rent:hover {
+   background: url("https://641805-2093260-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/08/oceanfrontwalkwayvenicebeac-1024x768.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Double:hover {
+   background: url("https://i.pinimg.com/originals/b5/a9/03/b5a903a996a55eda475c10acbbe935cd.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Ninja:hover {
+   background: url("https://ridelikeaninja.com/wp-content/uploads/2021/01/ninja_night_riding_tips_mountain_bike.jpeg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Eye:hover {
+   background: url("https://www.californiabeaches.com/wp-content/uploads/2014/09/BigS-Overlooking-Blacks-Beach-San-Diego-CA-Large-e1512026583176-1000x627.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Barrio:hover {
+   background: url("https://images.squarespace-cdn.com/content/v1/585c0d428419c265aad3ee58/1499702681974-C7RF74QBHYLKV4HR6DBG/Chicano+Park_Larry+Rizzo.JPG?format=750w") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+ .Treat:hover {
+   background: url("https://media-cdn.tripadvisor.com/media/photo-s/0b/90/b4/3e/desserts-on-display-at.jpg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
+
+ .Hash:hover {
+   background: url("https://d1ralsognjng37.cloudfront.net/f883219e-5f63-4cc0-a3a6-a5a1fbe5cf79.jpeg") no-repeat center;
+   z-index: 99;
+   background-size: cover;
+ }
